@@ -48,7 +48,7 @@ endif
 set mouse=a		" Enable mouse usage (all modes)
 set hlsearch
 :nnoremap <CR> :nohlsearch <CR><CR>
-:nmap <F6> :tebe
+:nmap <F6> :tabe
 :nmap <F7> :tabp<CR>
 :nmap <F8> :tabn<CR>
 
