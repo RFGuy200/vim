@@ -37,7 +37,7 @@ endif
 "endif
 
 " The following are commented out as they cause vim to behave a lot
-" differently from regular Vi. They are highly recommended though.
+" differently from regular Vi. They are highly recommended though
 "set showcmd		" Show (partial) command in status line.
 "set showmatch		" Show matching brackets.
 "set ignorecase		" Do case insensitive matching
@@ -48,6 +48,10 @@ endif
 set mouse=a		" Enable mouse usage (all modes)
 set hlsearch
 :nnoremap <CR> :nohlsearch <CR><CR>
+:nmap <F6> :tebe
+:nmap <F7> :tabp<CR>
+:nmap <F8> :tabn<CR>
+
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
