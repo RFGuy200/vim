@@ -45,6 +45,7 @@ endif
 "set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
+set tabstop=4
 set mouse=a		" Enable mouse usage (all modes)
 set hlsearch
 :nnoremap <CR> :nohlsearch <CR><CR>
