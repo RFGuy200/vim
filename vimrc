@@ -52,6 +52,8 @@ set hlsearch
 :nmap <F6> :tabe
 :nmap <F7> :tabp<CR>
 :nmap <F8> :tabn<CR>
+"Allow the. to execute once for every selection of visual selection
+vnoremap . :normal .<CR>
 
 
 " Source a global configuration file if available
