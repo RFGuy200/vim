@@ -45,16 +45,30 @@ endif
 "set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
+set diffopt+=iwhite
+set diffexpr=""
 set tabstop=4
+set shiftwidth=4
+set expandtab
 set mouse=a		" Enable mouse usage (all modes)
 set hlsearch
+set number
+:retab
 :nnoremap <CR> :nohlsearch <CR><CR>
 :nmap <F6> :tabe
 :nmap <F7> :tabp<CR>
 :nmap <F8> :tabn<CR>
 "Allow the. to execute once for every selection of visual selection
 vnoremap . :normal .<CR>
-
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+"let g:netrw_browse_split = 4
+let g:netrw_altv = 2
+let g:netrw_winsize = 25
+"augroup ProjectDrawer
+"    autocmd!
+"    autocmd VimEnter * :Vexplore
+"augroup END
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
