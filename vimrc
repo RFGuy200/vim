@@ -45,6 +45,7 @@ endif
 "set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
+set clipboard=unnamed   "Sets default clipboard to system
 set diffopt+=iwhite
 set diffexpr=""
 set tabstop=4
@@ -53,7 +54,8 @@ set expandtab
 set mouse=a		" Enable mouse usage (all modes)
 set hlsearch
 set number
-:retab
+set autoindent
+":retab
 :nnoremap <CR> :nohlsearch <CR><CR>
 :nmap <F6> :tabe
 :nmap <F7> :tabp<CR>
